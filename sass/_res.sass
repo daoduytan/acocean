@@ -1,0 +1,164 @@
+@media (max-width: 1199px) 
+	.header_top .nav ul li
+		margin-left: 15px
+
+	.service_box
+		padding: 0
+
+	.slider h3 
+		font-size: 80px
+
+	.clients .left-inner
+		padding: 50px 100px
+
+@media (min-width: 992px)
+	.btn-nav
+		display: none !important
+
+@media (max-width: 991px)
+	.btn-nav 
+		color: #fff
+		font:
+			size: 20px
+		display: table
+		cursor: pointer
+
+	.header_top-wrap
+		min-height: 60px
+	.header_top 
+		
+		.nav 
+			// display: none
+			+position(fixed, 0 0 0 null)
+			background: #fff
+			text-align: left
+			padding: 50px 30px
+			width:90%
+			max-width: 300px
+			box-shadow: -2px 0 10px rgba(0,0,0,.1)
+			z-index: 9999
+			opacity: 0
+			visibility: hidden
+			transform: translateX(100%)
+			transition: all .2s cubic-bezier(0.01, 1.07, 1, 1)
+
+			ul 
+				li 
+					display: block
+					margin: 0 0 20px
+
+					a 
+						color: $black
+
+	.slider h3
+		font:
+			size: 50px
+
+	.service_box 
+		margin-bottom: 30px
+
+	.who_service .right_inner
+		margin-left: 150px
+
+
+@media (min-width: 768px)
+	.who_service 
+		.right
+			background: #31333f
+			min-height: 600px
+				
+			.iphone 
+				+position(absolute, 50% null null -225px)
+				transform: translateY(-45%)
+
+@media (max-width: 767px)
+	.section
+		padding: 50px 0
+	.slider h3
+		font:
+			size: 25px
+
+	.section_header h3
+		font:
+			size: 30px
+
+	.about 
+		text-align: center
+
+		.img 
+			img 
+				display: block
+				max-width: 100%
+				margin: 30px auto 0
+
+	.who_service 
+		.right	
+			padding-top: 50px
+			padding-bottom: 50px
+
+			&_inner
+				margin: 0 0 0 30px
+
+			.iphone
+				img
+					display: block
+					max-width: 100%
+					margin: 50px auto 0
+	.works .work .section_header
+		text-align: center
+		top: 30px
+		padding: 0
+		p
+			width: 100%
+
+	.clients 
+		.left 
+			background: rgba(#68bcc6, .88)
+
+		.left-inner
+			padding: 50px 0
+
+	.contact
+		&_main
+			// background: pink
+			margin: auto
+			max-width: 360px
+			text-align: center
+
+@media (max-width: 650px)
+	.works .work_caption p
+		display: none
+		
+	.workflow_main
+		&:after
+			left: 15px
+			margin-left: 0
+
+		&-step 
+			li
+				padding-left: 50px
+				&:before 
+					left: 16px
+				.step
+					&:before, &:after 
+						left: -20px !important
+						right: inherit !important
+
+					&:before
+						border-color: transparent #fff transparent transparent
+						left: -19px !important
+					&:after 
+						border-color: transparent #eee transparent transparent
+
+			.step
+				width: 100%
+
+@media (max-width: 500px)
+	.row-work
+		.work-6
+			width: 100%
+		.work-3 
+			width: 50%
+
+
+

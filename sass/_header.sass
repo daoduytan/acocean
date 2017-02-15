@@ -1,0 +1,148 @@
+.header 
+	background: url(../img/1_low.jpg) no-repeat top center
+	background:
+		size: cover
+		attachment: fixed
+	min-height: 100vh
+	position: relative
+	ul 
+		list-style: none
+		margin: 0
+		padding: 0
+
+	.scroll-mouse 
+		border: 1px solid #ffffff
+		border-radius: 20px
+		position: absolute
+		bottom: 15px
+		left: 50%
+		width: 20px
+		height: 36px
+		-webkit-backface-visibility: hidden
+		-webkit-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+
+		&:before 
+			background-color: #ffffff
+			border-radius: 100%
+			content: ""
+			position: absolute
+			top: 5px
+			left: 50%
+			margin-left: -2px
+			width: 4px
+			height: 4px
+			-webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px)
+			transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px)
+			-webkit-animation: mouse_scroll_animate 1.5s -1s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite
+			animation: mouse_scroll_animate 1.5s -1s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite
+
+	&_top
+		background: rgba(#fff,0)
+		+position(fixed, 0 null null 0)
+		-webkit-transition: all .3s ease-in-out
+		-moz-transition: all .3s ease-in-out
+		transition: all .3s ease-in-out
+		width: 100%
+		z-index: 999
+		&.stick
+			background: rgba(#fff,.95)
+			-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3)
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,.3)
+			box-shadow: 0 0 10px rgba(0,0,0,.3)
+
+			.logo a, .btn-nav
+				color: #EF6859
+		
+			.nav 
+		
+				ul 
+					li 
+
+						a 
+							color: $black
+							
+
+		&-wrap 	
+			display: table 
+			width: 100%
+			min-height: 70px
+
+		.logo, .nav, .btn-nav
+			display: table-cell
+			vertical-align: middle
+
+		.logo 
+			a 
+				text:
+					transform: uppercase
+					decoration: none
+				font:
+					size: 30px
+					weight: 700
+				color: #fff 
+
+		.nav 
+			text-align: right
+
+			ul 
+				li 
+					display: inline-block
+					margin-left: 30px
+
+					&.active 
+						a 
+							color: #EF6859
+					a 
+						color: #fff
+						font:
+							size: 14px
+							weight: 500
+						text:
+							decoration: none
+							transform: uppercase
+
+.hero-banner
+	+position(absolute, 50% null null)
+	+size(100% null)
+	-webkit-transform: translateY(-50%)
+	-moz-transform: translateY(-50%)
+	transform: translateY(-50%)
+
+.slider
+	.slick-slide
+		&:focus 
+			outline: none
+
+	h3 
+		text-transform: uppercase
+		color: #fff
+		font:
+			size: 100px
+			weight: 700
+		letter-spacing: 5px
+		text-align: center
+		margin: 0
+
+	.slick
+		&-dots
+			margin-top: 50px
+			text-align: center
+			li 
+				display: inline-block
+				+size(15px 15px)
+				border: 2px solid #fff 
+				border-radius: 50%
+				margin: 0 3px
+				cursor: pointer
+				button 
+					display: none
+
+				&.slick-active
+					background: #fff
+
+
+
+
+

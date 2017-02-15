@@ -1,0 +1,505 @@
+.bar-intro 
+	background: $blue
+	color: #fefefe
+	padding: 30px 0
+	text-align: center
+	display: none
+
+	&-wrap
+		max-width: 650px
+		margin: auto
+
+	h2 
+		font:
+			size: 25px
+			weight: 300
+		margin: 0 0 10px
+
+	p 
+		font:
+			size: 14px
+			weight: 300
+
+	a 
+
+
+.section 
+	clear: both
+	padding: 70px 0
+	
+	&_header 
+		margin-bottom: 50px
+
+		&.text-center 
+			p 
+				margin: 15px auto 0
+
+		h3 
+			text:
+				transform: uppercase
+			font:
+				size: 40px
+				weight: 300
+			margin: 0
+		p 
+			font:
+				size: 20px
+				weight: 300
+			margin-top: 20px
+			max-width: 768px
+			width: 90%
+
+.service 
+	background: #f7f7f7
+
+	&_box
+		text-align: center
+		padding: 0 5px
+		.icon 
+			text-align: center
+			background: $yellow
+			height: 120px
+			line-height: 120px
+			color: #fff
+			font:
+				size: 40px
+			margin: auto
+			-webkit-border-radius: 5px 5px 0 0
+			-moz-border-radius: 5px 5px 0 0
+			border-radius: 5px 5px 0 0
+			position: relative
+			text-shadow: 0px 0px 20px rgba(0,0,0,.1)
+
+			&:after
+				content: ""
+				display: block
+				+size(15px 15px)
+				border: 15px solid
+				border-color: $yellow transparent transparent
+				+position(absolute, null null -25px 50% )
+				margin-left: -15px
+
+
+	&_list
+		border: 1px solid #eee
+		border-top: none
+		-webkit-border-radius: 0 0 5px 5px
+		-moz-border-radius: 0 0 5px 5px
+		border-radius: 0 0 5px 5px
+		background: #fff
+
+		h4 
+			text-transform: uppercase
+			font:
+				size: 17px
+				weight: 500
+			padding: 30px 0 15px
+			margin: 0
+
+		ul 
+			list-style: none
+			padding: 0
+			margin: 0
+
+			li 
+				border-bottom: 1px dashed #eee
+				padding: 7px 0
+				font-weight: 300
+
+				&:last-child 
+					border: none
+
+.about 
+	background: #fff url(../img/blur.png) no-repeat top right
+	background-size: auto 100%
+	overflow: hidden
+	
+.who_service 
+	background: url(../img/home-parallax.jpg) no-repeat left center
+	padding: 0 !important
+
+	.left 
+		opacity: 0
+
+	.right
+		background: #31333f
+		// min-height: 600px
+			
+		// .iphone 
+		// 	+position(absolute, 50% null null -225px)
+		// 	transform: translateY(-45%)
+
+		&_inner 
+			color: #fff
+			+margin(100px 0 0 250px)
+
+			ul 
+				list-style: none
+				padding: 0
+				margin: 0
+
+				li 
+					position: relative
+					padding-left: 60px
+					margin-bottom: 5px
+					span 
+						+position(absolute, 0 null null 0)
+						font-size: 30px
+					h3 
+						font:
+							weight: 500
+							size: 16px
+					p 
+						font: 
+							size: 14px
+							weight: 300
+
+	
+.works 
+	padding: 0 !important
+	overflow: hidden
+	background: #fff
+
+	.works_main 
+		width: 200%
+		position: relative
+
+		&:after
+			content: ""
+			display: table 
+			clear: both
+
+		.list-works, .detail-work
+			width: 50%
+			float: left
+
+		.list-works
+			-webkit-transition: all .5s cubic-bezier(0, 0.99, 1, 1)
+			-moz-transition: all .5s cubic-bezier(0, 0.99, 1, 1)
+			transition: all .5s cubic-bezier(0, 0.99, 1, 1)
+			position: relative
+		.back 
+			+position(fixed, 50% null null 0px)
+			+size(30px 70px)
+			background: rgba($black, .5)
+			line-height: 70px
+			text-align: center
+			cursor: pointer
+			font-size: 20px
+			color: #fff
+			display: none
+			z-index: 9999
+
+			&:hover 
+				background: $yellow
+
+			
+		&.toogle 
+
+			.list-works
+				margin-left: -50%
+			.back
+				display: block
+
+		
+		.hideWork >	.row-work 
+			display: none;
+		
+
+		.detail-work
+			overflow: hidden
+			
+			&-wrap 
+				width: 95%
+				max-width: 1170px
+				margin: 50px auto
+				padding-left: 35px
+				padding-right: 15px
+
+				p 
+					font-size: 16px
+					line-height: 1.5
+				
+				header 
+					position: relative
+					margin-bottom: 20px
+					// padding-left: 50px
+					padding-bottom: 20px
+					border-bottom: 1px solid #ddd
+
+					h3 
+						font:
+							size: 30px
+							weight: 300
+
+			.img-mockup 
+				margin: 50px 0
+	
+	.section_header
+		padding: 100px 50px
+		background-size: auto 100%
+
+	.work 
+		float: left
+		display: block
+		width: 100%
+		background:
+			size: cover
+			position: center
+		position: relative
+		overflow: hidden
+
+		&:before 
+			content: ""
+			display: block 
+			+position(absolute, 0 0 0 0)
+			backrgound: pink
+
+		.section_header 
+			position: absolute
+			top: 0
+
+		&_caption 
+			+position(absolute, null 0 0 0)
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 2%, rgba(0,0,0,0.65) 100%)
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.65) 100%)
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.65) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 )
+			color: #fff
+			padding: 15px 15px 0
+			transition: min-height .3s cubic-bezier(0, 0, 0.18, 1.01), background .5s cubic-bezier(0, 0, 0.18, 1.01)
+			min-height: 70px
+			h3 
+				font:
+					size: 14px
+					weight: 500
+				margin: 0 0 5px
+				-webkit-transition: all .3s cubic-bezier(0, 0, 0.18, 1.01)
+				-moz-transition: all .3s cubic-bezier(0, 0, 0.18, 1.01)
+				transition: all .3s cubic-bezier(0, 0, 0.18, 1.01)
+				text-shadow: 0px 0px 1px rgba(0,0,0,.6)
+			span 
+				font:
+					size: 10px
+					weight: 300
+					style: italic
+				display: block
+				margin: 0 0 10px
+				color: rgba(#fff,.7)
+			p 
+				margin: 0
+				font:
+					size: 11px
+				line-height: 1.5
+				letter-spacing: 1px
+				visibility: hidden
+				transform: translateY(100%)
+				opacity: 0
+				height: 0px
+				transition: all .2s cubic-bezier(0, 0, 0.18, 1.01)
+
+		&:hover 
+			.work_caption 
+				min-height: 100%
+				background: rgba(0,0,0,0.5)
+
+				h3 
+					margin-top: 30px
+				p
+					visibility: visible
+					transform: translateY(0)
+					opacity: 1
+					height: inherit
+
+
+		&:after 
+			content: ""
+			display: block
+
+.workflow 
+	background: #eee
+	position: relative
+
+	&_main 
+		position: relative
+
+		&:after 
+			content: ""
+			+position(absolute, 0 null 0 50%)
+			display: block
+			+size(2px 100%)
+			background: #ddd
+			margin-left: -1px
+
+		&-step 
+			list-style: none
+			padding: 0
+			margin: 0
+
+			li 
+				position: relative
+				margin: 0 0 30px
+				clear: both
+				position: relative
+				overflow: hidden
+
+				&:last-child 
+					margin: 0
+
+				&:before 
+					content: ""
+					display: block
+					position: absolute
+					top: 30px
+					left: 50%
+					margin-left: -10px
+					+size(20px 20px)
+					border-radius: 50%
+					background: #fff
+					border: 2px solid #7f7f7f
+					z-index: 10
+
+				&:nth-child(even) 
+					.step 
+						float: right
+
+						&:after
+							right: inherit
+							left: -20px
+							border-color:  transparent #eee transparent  transparent
+						&:before 
+							right: inherit
+							left: -19px
+							border-color:  transparent #fff transparent  transparent
+
+			.step 
+				width: 45%
+				border: 1px solid #ddd
+				padding: 30px
+				background: #fff
+				position: relative
+				border-radius: 3px
+
+				&:after, &:before 
+					content: ""
+					display: block
+					+size(10px 10px)
+					position: absolute
+					border: 10px solid
+					z-index: 1
+					top: 30px
+
+				&:before 
+					border-color: transparent transparent transparent #fff
+					right: -19px
+					z-index: 2
+				&:after 
+					right: -20px
+					border-color: transparent transparent transparent #ddd
+				h3 
+					font:
+						size: 17px
+					margin: 0 0 20px	
+
+				p 
+					margin: 0
+.clients 
+	color: #e6f4f5
+	padding: 0 !important
+	background: url(../img/avatar_all.png)
+	.left 
+		background: rgba(104, 188, 198, 0.88)
+
+		h3 
+			color: #fff
+
+
+		&-inner 
+			padding: 50px 200px
+
+	.slider-say
+		max-width: 450px
+		// color: #b7e6ea
+	
+		.slick-dots 
+			list-style: none
+			padding: 0
+			margin: 30px auto 0
+			text-align: center
+
+			li 
+				display: inline-block
+				+size(10px 10px)
+				border-radius: 50%
+				border: 1px solid
+				margin: 0 3px
+				cursor: pointer
+				&.slick-active
+					background: #e6f4f5
+				button 
+					display: none
+
+		.bubble 
+			font-size: 14px
+			font-weight: 300
+			line-height: 1.5
+			letter-spacing: 1px
+			margin: 0 0 30px
+		.avatar 
+
+			.img
+				+size(60px 60px)
+				border-radius: 50%
+				// border: 1px solid
+				margin: 0 10px 0 0
+				overflow: hidden
+				float: left
+
+				img 
+					width: 100%
+			span
+				display: block
+				padding-top: 10px
+				strong 
+					display: block
+					color: #fff
+
+				
+
+
+
+
+.contact 
+	background: #F4F4F4 url(../img/word_map.png) no-repeat 50% 50%
+	min-height: 90vh
+
+	a.btn 
+		margin: 0 0 20px
+		box-shadow: 0 0 30px rgba(245, 180, 0, 0.3);
+
+	.social-icon 
+		li 
+			+size(35px 35px)
+			border-radius: 50%
+			background: #d1d1d1
+			line-height: 35px
+			margin: 5px
+			text-align: center
+
+			.fa-twitter
+				color: #1DA1F2
+			.fa-facebook
+				color: #3B5998
+			.fa-linkedin
+				color: #0075B2
+
+			&:hover 
+				i 
+					color: #fff
+
+				&:nth-child(1)
+					background: #1DA1F2
+				&:nth-child(2)
+					background: #3B5998
+				&:nth-child(3)
+					background: #0075B2
